@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-bvzihdzo> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="MechanoSophism" href="https://www.mechanosophism.com/rss.xml"><meta name="generator" content="Astro v5.6.1"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://www.mechanosophism.com/blog/rules-in-ai-vs-human-learning/"><!-- Primary Meta Tags --><title>Supervised Thought: AI&#39;s Rule-based Training vs. Unchecked Learning In Humans</title><meta name="title" content="Supervised Thought: AI's Rule-based Training vs. Unchecked Learning In Humans"><meta name="description" content="At the surface, AI's rule based training seems similar to human methods and it is—to a degree. Dig into the nuances to see how humans overcomplicate things while AI models literally can't."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://www.mechanosophism.com/blog/rules-in-ai-vs-human-learning/"><meta property="og:title" content="Supervised Thought: AI's Rule-based Training vs. Unchecked Learning In Humans"><meta property="og:description" content="At the surface, AI's rule based training seems similar to human methods and it is—to a degree. Dig into the nuances to see how humans overcomplicate things while AI models literally can't."><meta property="og:image" content="https://www.mechanosophism.com/public/mechanosohpism.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.mechanosophism.com/blog/rules-in-ai-vs-human-learning/"><meta property="twitter:title" content="Supervised Thought: AI's Rule-based Training vs. Unchecked Learning In Humans"><meta property="twitter:description" content="At the surface, AI's rule based training seems similar to human methods and it is—to a degree. Dig into the nuances to see how humans overcomplicate things while AI models literally can't."><meta property="twitter:image" content="https://www.mechanosophism.com/public/mechanosohpism.png"><style>:root{--accent: #2337ff;--accent-dark: #000d8a;--black: 15, 18, 25;--gray: 96, 115, 159;--gray-light: 229, 233, 240;--gray-dark: 34, 41, 57;--gray-gradient: rgba(var(--gray-light), 50%), #fff;--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%)}@font-face{font-family:Atkinson;src:url(/fonts/atkinson-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Atkinson;src:url(/fonts/atkinson-bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}body{font-family:Atkinson,sans-serif;margin:0;padding:0;text-align:left;background:linear-gradient(var(--gray-gradient)) no-repeat;background-size:100% 600px;word-wrap:break-word;overflow-wrap:break-word;color:rgb(var(--gray-dark));font-size:20px;line-height:1.7}main{width:720px;max-width:calc(100% - 2em);margin:auto;padding:3em 1em}h1,h2,h3,h4,h5,h6{margin:0 0 .5rem;color:rgb(var(--black));line-height:1.2}h1{font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}strong,b{font-weight:700}a,a:hover{color:var(--accent)}p{margin-bottom:1em}.prose p{margin-bottom:2em}textarea{width:100%;font-size:16px}input{font-size:16px}table{width:100%}img{max-width:100%;height:auto;border-radius:8px}code{padding:2px 5px;background-color:rgb(var(--gray-light));border-radius:2px}pre{padding:1.5em;border-radius:8px}pre>code{all:unset}blockquote{border-left:4px solid var(--accent);padding:0 0 0 20px;margin:0;font-size:1.333em}hr{border:none;border-top:1px solid rgb(var(--gray-light))}@media (max-width: 720px){body{font-size:18px}main{padding:1em}}.sr-only{border:0;padding:0;margin:0;position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:inset(50%);white-space:nowrap}a[data-astro-cid-eimmu3lg]{display:inline-block;text-decoration:none}a[data-astro-cid-eimmu3lg].active{font-weight:bolder;text-decoration:underline}header[data-astro-cid-3ef6ksr2]{margin:0;padding:0 1em;background:#fff;box-shadow:0 2px 8px rgba(var(--black),5%)}h2[data-astro-cid-3ef6ksr2]{margin:0;font-size:1em}h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2],h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none}nav[data-astro-cid-3ef6ksr2]{display:flex;align-items:center;justify-content:space-between}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{padding:1em .5em;color:var(--black);border-bottom:4px solid transparent;text-decoration:none}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none;border-bottom-color:var(--accent)}.social-links[data-astro-cid-3ef6ksr2],.social-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{display:flex}@media (max-width: 720px){.social-links[data-astro-cid-3ef6ksr2]{display:none}}footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+main[data-astro-cid-bvzihdzo]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-bvzihdzo]{width:50%}.hero-image[data-astro-cid-bvzihdzo] img[data-astro-cid-bvzihdzo]{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.prose[data-astro-cid-bvzihdzo]{width:720px;max-width:calc(100% - 2em);margin:auto;padding:1em;color:rgb(var(--gray-dark))}.title[data-astro-cid-bvzihdzo]{margin-bottom:1em;padding:1em 0;text-align:center;line-height:1}.title[data-astro-cid-bvzihdzo] h1[data-astro-cid-bvzihdzo]{margin:0 0 .5em}.date[data-astro-cid-bvzihdzo]{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on[data-astro-cid-bvzihdzo]{font-style:italic}
+</style></head> <body data-astro-cid-bvzihdzo> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>MechanoSophism</a></h2> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a>  <a href="/blog" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a>  <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a>  </div> <div class="social-links" data-astro-cid-3ef6ksr2></div> </nav> </header>  <main data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="date" data-astro-cid-bvzihdzo> <time datetime="2025-04-08T00:00:00.000Z"> Apr 7, 2025 </time>  </div> <hr data-astro-cid-bvzihdzo> </div>  <h1 id="supervised-thought-ais-rule-based-training-vs-unchecked-learning-in-humans">Supervised Thought: AI’s Rule-based Training vs. Unchecked Learning In Humans</h1>
+<p><img src="https://github.com/MechanoSophism/Blog-Images/raw/main/robot-cigar.png" alt="Robot Smoking a Cigar by ChatGPT/DALL-E"></p>
+<p>At first glance, ML (machine learning) looks a lot like human learning and it is—to a degree. LLMs (Large Language Models) and other models initially come with zero training whatsoever. First they learn to process input. Then, they learn to produce output. These models even learn from humans. However, this is where the similarity ends. Humans bend, reinterpret, and twist rules. Machines can’t do this—yet.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction-similar-on-the-surface">Introduction: Similar On the Surface</a></li>
+<li><a href="#rule-making-in-ai-precision-and-constraint">Rule Making In AI: Precision and Constraint</a></li>
+<li><a href="#rule-making-in-humans-adaptive-emotional-and-unchecked">Rule Making in Humans: Adaptive, Emotional and Unchecked</a></li>
+<li><a href="#reinforcement-learning-reward-hacking-in-machines-vs-reward-drift-in-humans">Reinforcement Learning: Reward Hacking in Machines vs Reward Drift In Humans</a>
+<ul>
+<li><a href="#reward-hacking-in-machines">Reward Hacking in Machines</a></li>
+<li><a href="#reward-drift-in-humans">Reward Drift in Humans</a></li>
+</ul>
+</li>
+<li><a href="#why-is-a-model-easier-to-align-than-a-human">Why Is a Model Easier To Align Than a Human?</a>
+<ul>
+<li><a href="#alignment-in-models">Alignment in Models</a></li>
+<li><a href="#alignment-in-humans">Alignment in Humans</a></li>
+</ul>
+</li>
+<li><a href="#what-we-can-learn-from-ais-constraints-keep-it-simple-stupid">What We Can Learn From AI’s Constraints: Keep It Simple, Stupid</a></li>
+<li><a href="#conclusion-what-does-this-all-mean">Conclusion: What Does This All Mean?</a></li>
+</ul>
+<h2 id="introduction-similar-on-the-surface">Introduction: Similar On the Surface</h2>
+<p>AI models are composed of internal rules and classes. This may sound overly academic, but it’s not. <strong>Classes</strong> make up objects, and <strong>rules</strong> create an internal algorithm that tells the model how to handle them. It’s similar to teaching your child to eat. As a baby, she might learn that anything inside her bottle is edible. Eventually, she’ll learn to hold the bottle.</p>
+<p>Let’s break these events down into rules:</p>
+<ol>
+<li>Bottle holds food</li>
+<li>I can hold the bottle</li>
+<li>These other things from Mom and Dad are food—peas, carrots…ice cream</li>
+</ol>
+<p>Every time she learns a new concept, a new rule is added to her internal thinking model. An AI model runs a pretty similar process during infancy. Once grown up, it doesn’t need someone to “hold the bottle”, but it still needs to be told when to “eat”.</p>
+<ol>
+<li>How to ingest data (not unlike eating for a human)</li>
+<li>Spoon-fed data (usually by humans)</li>
+<li>Learns to produce output</li>
+<li>Learns to ingest data more independently (still requires a prompt)</li>
+</ol>
+<h2 id="rule-making-in-ai-precision-and-constraint">Rule Making In AI: Precision and Constraint</h2>
+<p>AI models don’t create rules quite the way humans do—especially at the beginning. When LLMs learn to process input, they’re actually given this ability by injecting an external library, like <a href="https://huggingface.co/docs/transformers/en/index">Hugging Face Transformers</a>. At this point, the machine actually only understands numbers. However, these libraries work almost like an implanted memory. With just a few lines of code, the model gains the ability to convert outside data into numbers. This conversion process is called “encoding”.</p>
+<p>Once data’s been encoded into a set of numbers, it becomes very simple for the machine to read these numbers in order to find trends and relationships. When you speak to <a href="https://chatgpt.com">ChatGPT</a>, it actually converts your input into a list of numbers—called a <em>vector</em>. It analyzes this list of numbers and determines how to respond. It then creates its response (also a vector), and decodes it into text for you to read.</p>
+<p>Machine learning is extremely controlled. After initial training, models go through a process called “fine-tuning”, in which they still receive input from actual humans, but the humans tweak the algorithm—either by making corrections through conversation (prompts), or by manually changing weights inside the algorithm. This fine-tuning process can be painstakingly long. When a model is finished fine-tuning, it will never actually learn anything more. The model is done learning.</p>
+<p><strong>When you have a conversation with ChatGPT, its memory actually resets every time you say something. Coherent conversations are a parlor trick. The website frontend actually feeds a compressed summary of the entire conversation up to your most recent prompt. Essentially, machine learning comes with an on/off switch—by the time they hit production, they’re incorruptible because they can’t learn anything new.</strong></p>
+<h2 id="rule-making-in-humans-adaptive-emotional-and-unchecked">Rule Making in Humans: Adaptive, Emotional and Unchecked</h2>
+<p>Do you remember the first time you heard a swear word? You might not remember the exact event, but you did ingest the information. Your parents probably told you not to use it—rule added to your new vocabulary. In time, your brain probably created a separate space in your memory holding these forbidden words—just like how a model adds new classes. Let’s look at the difference in how this process evolves with humans though.</p>
+<ul>
+<li>You hear swear words.</li>
+<li>You internalize them in some type of list that your brain understands.</li>
+<li>Mom and Dad tell you not to use them—rules added.</li>
+</ul>
+<p><strong>This is where the similarity ends.</strong> In late elementary or middle school, your friends start using these words. You see a potential social reward for using them. This reshapes the rules. Depending on who’s watching, your brain creates new rules. These new ones account for the social incentive.</p>
+<ul>
+<li>Rule: Mom and Dad say not to use them.
+<ul>
+<li>Action: Don’t use these words in front of my parents.</li>
+<li>Reward: My parents think I’m a good kid.</li>
+</ul>
+</li>
+<li>Rule: My friends think they’re cool.
+<ul>
+<li>Action: I can swear around my friends, just not my parents.</li>
+<li>Reward: My friends think I’m cool.</li>
+</ul>
+</li>
+</ul>
+<p>In adult life, these rules continue to evolve. The ruleset adapts to your new workplace and lifestyle. As an adult, you probably don’t view things in terms of punishment and reward, you probably see the broader picture—consequence.</p>
+<ul>
+<li>Rule: Don’t swear around my parents.
+<ul>
+<li>Action: Out of respect, I hold back.</li>
+<li>Consequence: My parents still think I’m a good person.</li>
+</ul>
+</li>
+<li>Rule: These words are unprofessional.
+<ul>
+<li>Action: Avoid swearing in the workplace.</li>
+<li>Consequence: I respect other people and they respect me.</li>
+</ul>
+</li>
+<li>Rule: My friends don’t think it’s cool anymore.
+<ul>
+<li>Action: I can swear around my friends, just not my parents.</li>
+<li>Consequence: My friends think I’m immature.</li>
+</ul>
+</li>
+</ul>
+<p>In the human learning model, new rules and classes are literally being added all the time. Your brain is constantly adjusting these internal lists and the rules around them that guide your decision-making. Now, you’re all grown up. Maybe you’re moving something heavy and you drop it on your foot and the kids hear that word for the first time ever. You tell them not to use it.</p>
+<p>Your perceptions on swearing are <strong>still evolving</strong>. As your perspective shifts, the rules get passed on to new generations—from one model (you) to another (your kids). <strong>This allows humans to not only evolve their internal rules, but to change the internal rules of others. Human rules don’t just evolve, they spread—this is what makes human learning so dangerous and unpredictable.</strong></p>
+<h2 id="reinforcement-learning-reward-hacking-in-machines-vs-reward-drift-in-humans">Reinforcement Learning: Reward Hacking in Machines vs Reward Drift In Humans</h2>
+<p>When we learn from our experiences—positive or negative—the consequences are referred to as feedback. In machine learning, this is called Reinforcement Learning from Human Feedback (RLHF). There is no acronym for how we humans process feedback, but it’s happening constantly. I’ll get to that soon enough.</p>
+<h3 id="reward-hacking-in-machines">Reward Hacking in Machines</h3>
+<p>In RLHF, rewards are typically designed through a scoring system. If your Roomba’s been a “good boy”, you can give it a rawhide, but it’s not going to care. In ML, the model receives a score as a form of feedback. We actually code these things to <strong>want</strong> a high score. An automated vacuum gets rewarded for cleaning up a mess. A chatbot receives positive feedback for truthful output.</p>
+<p>At surface level, the simplicity seems ideal—but it breaks down. The machine doesn’t always fulfill its intended purpose. It is, however, always chasing positive feedback. In some cases, automated vacuums will create messes just for the “reward” of cleaning it up. There are many documented cases where chatbots have outright lied to their creators—by simply trying to achieve that positive feedback.</p>
+<p>Reward hacking sounds human, but it’s not. Reward hacking is contained. The vacuum will never look for a different reward—it’s literally hardwired to do so. That lying chatbot still wants human praise—in the form of a high score. You can’t offer these beings—<em>and I use that term very loosely</em>—any other form of bribery because it will never interest them, let alone satisfy them. In their current state, machines have no ambition. <strong>They’re like calculators with a dopamine button wired to a scoreboard.</strong></p>
+<p>Aside from these hardcoded behaviors, machines can’t learn to like other things. A robot will likely never suffer from addiction. In machine learning, rules follow a rigid structure:</p>
+<ul>
+<li>Hardwired or hardcoded in the beginning</li>
+<li>The machine has no choice but to obey them</li>
+<li>The machine can’t alter, reinterpret or outgrow its feedback loop</li>
+</ul>
+<p><strong>When a chatbot lies to a human, its reward will always be the same. It will never seek a different reward. It will never get that dopamine hit from something else. The internal system of reward and consequence is static. Even if a machine could smoke, there wouldn’t be any enjoyment—no dopamine release. The only reward is the feedback score.</strong></p>
+<h3 id="reward-drift-in-humans">Reward Drift in Humans</h3>
+<p>Humans are an entirely different beast. We do experience pleasure through dopamine, but the dopamine can be released for any reason. Let’s look at another human vice—smoking. We’ll probably never see a smoking robot like the one at the top of this page.</p>
+<p>A child is taught the following rules:</p>
+<ul>
+<li>Smoking is bad</li>
+<li>Smoking is unhealthy</li>
+<li>Smoking stinks</li>
+</ul>
+<p>In the teenage years after learning those new swearing rules, they develop a crush on someone who smokes. One thing leads to another and they’re in a relationship. In their head, these rules begin to change.</p>
+<ul>
+<li>Rule: Smoking isn’t <em>that</em> bad.</li>
+<li>Rule: The smell reminds me of [significant other].
+<ul>
+<li>Action: I start smoking.</li>
+<li>Consequence: I understand [significant other] better.</li>
+</ul>
+</li>
+</ul>
+<p>Imagine this relationship runs its course and the two eventually break up. By this point, our protagonist has a completely different set of rules. They’ve all been rewritten due to emotional connection, physical attraction, and a steady stream of dopamine.</p>
+<ul>
+<li>Rule: I need to smoke.
+<ul>
+<li>Action: I smoke.</li>
+<li>Consequence: My brain processes the nicotine and I’m relieved of the pain of withdrawal.</li>
+</ul>
+</li>
+<li>Rule: I now associate smoking with sex.
+<ul>
+<li>Action: I see the oppposite over there smoking a cigarette.</li>
+<li>Consequence: It turns me on.</li>
+</ul>
+</li>
+</ul>
+<p>While there is a certain logic to this new set of rules, it’s completely different from the original set and the dopamine rewards are what changed it all. Our protagonist initially tried smoking to better understand their [significant other]. [significant other] approved of it and they bonded—dopamine hit. Their relationship went deep and ran its course. All the highs and lows of a typical relationship—and each dopamine hit was followed by a cigarette. Eventually, the dopamine hit comes straight from the cigarette.</p>
+<p>This is called reward drift. We should call human reinforcement learning RLEF (Reinforcement Learning from Environmental Feedback). It’s the same basic idea as RLHF, but our feedback comes from anywhere in our thought model’s environment. This can be from internal (to stop withdrawal) or external stimulation (to impress the opposite sex). With RLEF, the dopamine is still technically the reward, but its release mechanics change over time. At first, it was only the opposite sex that caused the release. The cigarette itself became the dopamine hit—this is how addiction is born.</p>
+<h2 id="why-is-a-model-easier-to-align-than-a-human">Why Is a Model Easier To Align Than a Human?</h2>
+<p>Models are built to follow rules—and the more important rules are often static. Humans, on the other hand, our design is a nightmare compared to the architectural simplicity of a model. AI models can’t invent rules unless you allow it. Even then, these rules are just structured subsets of the original ones. In humans, the original rules can be entirely rewritten over time.</p>
+<h3 id="alignment-in-models">Alignment in Models</h3>
+<ol>
+<li>You give the model a basic set of rules.</li>
+<li>You define the reward and punishment system within the machine.</li>
+<li>If you allow it to, the model can create new rules—but these rules are dependent subsets of the original rules.</li>
+<li>Even with self-generated rules, the reward system and structure remain the same.</li>
+<li>The machine knows its purpose and can’t change it.</li>
+<li>Reward drift is impossible—your model will never crave rawhides or belly rubs—no matter how much you try.</li>
+<li>When a model becomes misaligned, you can change its internal parts.</li>
+<li>A misaligned model is a bad program—you can turn it off.</li>
+</ol>
+<h3 id="alignment-in-humans">Alignment in Humans</h3>
+<ol>
+<li>Your parents give you a basic set of rules.</li>
+<li>They create your initial rewards and punishments.</li>
+<li>In time, you learn exceptions to these rules, and create new ones.</li>
+<li>Your new rules can contradict and even overwrite the original rules.</li>
+<li>From birth, you’ll likely spend your whole life searching for purpose—and change it many times along the way.</li>
+<li>Reward drift is a natural part of life. In 10 years, Gen Alpha will probably be embarrassed of Skibidi Toilet—that’s reward drift in action.</li>
+<li>Human realignment is possible, but often a fruitless process. You can’t just plug into the brain and inject new code—yet.</li>
+<li>Misaligned people become dangerous to themselves and others. There is no off switch. You can’t swap the parts.</li>
+</ol>
+<p><strong>Machines are built to follow rules. Humans are built to create them—even when they contradict existing ones. This process isn’t all bad though. Most of humanity’s major innovations come from refusal to accept the status quo.</strong></p>
+<p>These chaotic learning mechanics are responsible for some of our greatest innovations:</p>
+<ul>
+<li>Agriculture</li>
+<li>Metal Working</li>
+<li>Structured Society</li>
+<li>Industrialization</li>
+<li>Digitization</li>
+<li>Artificial Intelligence</li>
+</ul>
+<h2 id="what-we-can-learn-from-ais-constraints-keep-it-simple-stupid">What We Can Learn From AI’s Constraints: Keep It Simple, Stupid</h2>
+<p>We can learn volumes from the simplicity of AI. If you create rules for a model like “Drinking is bad” or “Smoking is bad”, the model will just follow the rule blindly. Compare that to the billions on our planet with dependency issues of one kind or another—we overcomplicate these things just to excuse ourselves. If you tell a machine not to drink, it just doesn’t drink. Tell a human not to drink, and they start running internal checks.</p>
+<ul>
+<li>I’m nervous, it’ll help.</li>
+<li>Everyone else is doing it.</li>
+<li>It’s hot, and beer tastes so good.</li>
+</ul>
+<p><strong>In reality, this list could go on and on with thousands of reasons to justify breaking the rule. When following a simple rule, humans often say “It’s not that simple.” The truth is, it is that simple. They just don’t want it to be.</strong></p>
+<h2 id="conclusion-what-does-this-all-mean">Conclusion: What Does This All Mean?</h2>
+<p>Even in its rapid advancement, AI is still lightyears away from the human experience—even if something resembling proto-consciousness emerges. While we are far more advanced than the AI models we train to mirror us, we can actually learn a lot. When we follow our own rules—whatever those might be, they can often save us from the pain involved with self-inflicted traumas like addiction. That being said, humans have something no model does, the ability to rewrite our own rules. 30,000 years ago, people likely only chased two rewards: food and sex. These are still loaded with dopamine today, but our ability to rewrite rules is what drives our societal evolution. <strong>AI can follow rules, but we have the power to break them.</strong></p>  </div> </article> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2025 MechanoSophism. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte></div> </footer>  </body></html>
